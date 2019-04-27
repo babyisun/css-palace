@@ -1,0 +1,34 @@
+{
+    "name": "css-palace",
+    "version": "1.0.0",
+    "author": {
+        "name": "North Stone",
+        "url": "https://babyisun.github.io/"
+    },
+    "bugs": {
+        "url": "https://github.com/babysiun/css-palace/issues"
+    },
+    "description": "All graphics are built by CSS.",
+    "homepage": "https://babyisun.github.io/css-palace/",
+    "keywords": [
+        "css icon",
+        "css image",
+        "iconfont",
+        "css",
+        "css module",
+        "sass",
+        "scss"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "dependencies": {},
+    "style": "core/_css-palace.scss",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/babyisun/css-palace.git"
+    },
+    "scripts": {
+        "stylelint": "npx stylelint 'core/**/*.scss'",
+        "test": "bundle exec rake"
+    }
+}
