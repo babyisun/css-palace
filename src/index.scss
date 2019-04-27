@@ -1,0 +1,13 @@
+@import "vars/buttons";
+@import "vars/inputs";
+
+
+@import "library/ellipsis";
+
+.a{
+    @include ellipsis;
+}
+
+.b{
+    @include ellipsis;
+}

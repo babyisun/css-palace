@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,EAAE,CCuBA,OAAO,CAFG,YAAY,CAGtB,SAAS,CAJD,IAAI,CAKZ,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,QAAQ,CACvB,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,MAAM,CDxBnB,EAAE,CCmBA,OAAO,CAFG,YAAY,CAGtB,SAAS,CAJD,IAAI,CAKZ,QAAQ,CAAE,MAAM,CAChB,aAAa,CAAE,QAAQ,CACvB,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,MAAM",
+"sources": ["../src/index.scss","../src/library/ellipsis.scss"],
+"names": [],
+"file": "css-palace.css"
+}
