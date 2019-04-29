@@ -1,2 +1,94 @@
-.a{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}.b{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal}
+@charset "UTF-8";
+/* A list of all HTML button elements.
+*
+* @type list
+*
+*/
+/* 所有input输入框集合.
+*
+* @type list
+*
+*/
+/* Out-of-width display ellipsis.
+*  超出显示省略号
+*
+* @argument {number} $width [100%]
+*   The `max-width` for the string to respect before being truncated.
+*
+* @argument {string} $display [inline-block]
+*   Sets the display-value of the element.
+*
+* @example scss
+*   .element {
+*     @include ellipsis;
+*   }
+*
+*   // CSS Output
+*   .element {
+*     display: inline-block;
+*     max-width: 100%;
+*     overflow: hidden;
+*     text-overflow: ellipsis;
+*     white-space: nowrap;
+*     word-wrap: normal;
+*   }
+*/
+/* Checks for a valid CSS color.
+*  颜色合法性检查
+*
+* @argument {string} $color
+*
+* @return {boolean}
+*
+*/
+.cp-arrow-up {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent currentColor;
+  border-width: 0 1.8rem 1.8rem; }
+
+.cp-arrow-down {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: currentColor transparent transparent;
+  border-width: 1.8rem 1.8rem 0; }
+
+.cp-arrow-left {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent currentColor transparent transparent;
+  border-width: 1.8rem 1.8rem 1.8rem 0; }
+
+.cp-arrow-right {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent transparent currentColor;
+  border-width: 1.8rem 0 1.8rem 1.8rem; }
+
+.cp-arrow-x-up {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent currentColor;
+  border-width: 0 1.8rem 1.8rem;
+  position: relative; }
+  .cp-arrow-x-up::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 1.8em;
+    margin-left: -.45em;
+    width: .9em;
+    height: 1.3em;
+    background-color: currentColor; }
+
+.css-palace {
+  color: #888;
+  font-size: 12px;
+  font-style: normal; }
+
 /*# sourceMappingURL=css-palace.css.map */

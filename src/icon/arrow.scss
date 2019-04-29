@@ -1,0 +1,37 @@
+@import '../library/triangle';
+
+$arrow-prefix: 'arrow';
+
+$arrow-num: 1.8rem;
+
+
+.#{$prefix}-#{$arrow-prefix}-up {
+	@include triangle('up', $arrow-num*2, $arrow-num, currentColor);
+}
+
+.#{$prefix}-#{$arrow-prefix}-down {
+	@include triangle('down', $arrow-num*2, $arrow-num, currentColor);
+}
+
+.#{$prefix}-#{$arrow-prefix}-left {
+	@include triangle('left', $arrow-num, $arrow-num*2, currentColor);
+}
+
+.#{$prefix}-#{$arrow-prefix}-right {
+	@include triangle('right', $arrow-num, $arrow-num*2, currentColor);
+}
+
+.#{$prefix}-#{$arrow-prefix}-x-up {
+	@include triangle('up', $arrow-num*2, $arrow-num, currentColor);
+	position: relative;
+	&::after{
+	content:"";
+	position:absolute;
+	left:50%;
+	top:1.8em;
+	margin-left:-.45em;
+	width:.9em;
+	height:1.3em;
+	background-color: currentColor;
+	}
+}

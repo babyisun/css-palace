@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-/* 超出显示省略号.
+/* Out-of-width display ellipsis.
+*  超出显示省略号
 *
 * @argument {number} $width [100%]
 *   The `max-width` for the string to respect before being truncated.

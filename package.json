@@ -20,7 +20,7 @@
         "scss"
     ],
     "license": "MIT",
-    "main": "index.js",
+    "main": "src/index.js",
     "dependencies": {},
     "style": "core/_css-palace.scss",
     "repository": {

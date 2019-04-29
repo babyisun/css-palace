@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* Checks for a valid CSS color.
+*  颜色合法性检查
+*
+* @argument {string} $color
+*
+* @return {boolean}
+*
+*/
+
+@function _is-color($color) {
+  @return (type-of($color) == color) or ($color == "currentColor");
+}

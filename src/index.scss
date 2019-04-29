@@ -1,13 +1,15 @@
+// defatul prefix
+$prefix: 'cp' !default;
+
 @import "vars/buttons";
 @import "vars/inputs";
 
-
 @import "library/ellipsis";
 
-.a{
-    @include ellipsis;
-}
+@import "icon/arrow";
 
-.b{
-    @include ellipsis;
+.css-palace{
+    color: #888;
+    font-size: 12px;
+    font-style: normal;
 }
