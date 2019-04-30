@@ -24,14 +24,15 @@ $arrow-num: 1.8rem;
 .#{$prefix}-#{$arrow-prefix}-x-up {
 	@include triangle('up', $arrow-num*2, $arrow-num, currentColor);
 	position: relative;
-	&::after{
-	content:"";
-	position:absolute;
-	left:50%;
-	top:1.8em;
-	margin-left:-.45em;
-	width:.9em;
-	height:1.3em;
-	background-color: currentColor;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: $arrow-num * 0.9;
+		margin-left: -$arrow-num / 2;
+		width: $arrow-num;
+		height: 1.3em;
+		background-color: currentColor;
 	}
 }
