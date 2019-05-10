@@ -41,8 +41,6 @@ $player-prefix: 'player';
 
     &::before {
         @include player-base;
-        margin-top: auto;
-        margin-bottom: auto;
         margin-left: -$size * 0.175;
         width: $size * 0.1;
         height: $size * 0.45;
@@ -51,11 +49,195 @@ $player-prefix: 'player';
 
     &::after {
         @include player-base;
-        margin-top: auto;
-        margin-bottom: auto;
         margin-left: $size * 0.075;
         width: $size * 0.1;
         height: $size * 0.45;
         background-color: currentColor;
     }
+}
+
+.#{$prefix}-#{$player-prefix}-previous {
+    @include player-ring;
+
+    &::before {
+        @include player-base;
+        margin-left: -$size * 0.325;
+        width: 0;
+        height: 0;
+        border-top: $size * 0.225 solid transparent;
+        border-bottom: $size * 0.225 solid transparent;
+        border-right: $size * 0.3 solid currentColor;
+    }
+
+    &::after {
+        @include player-base;
+        margin-left: -$size * 0.1;
+        width: 0;
+        height: 0;
+        border-top: $size * 0.225 solid transparent;
+        border-bottom: $size * 0.225 solid transparent;
+        border-right: $size * 0.3 solid currentColor;
+    }
+}
+
+.#{$prefix}-#{$player-prefix}-next {
+    @include player-ring;
+
+    &::before {
+        @include player-base;
+        margin-left: -$size * 0.2;
+        width: 0;
+        height: 0;
+        border-top: $size * 0.225 solid transparent;
+        border-bottom: $size * 0.225 solid transparent;
+        border-left: $size * 0.3 solid currentColor;
+    }
+
+    &::after {
+        @include player-base;
+        margin-left: $size * 0.025;
+        width: 0;
+        height: 0;
+        border-top: $size * 0.225 solid transparent;
+        border-bottom: $size * 0.225 solid transparent;
+        border-left: $size * 0.3 solid currentColor;
+    }
+}
+
+.#{$prefix}-#{$player-prefix}-stop {
+    @include player-ring;
+
+    &::after {
+        @include player-base;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: $size * 0.45;
+        height: $size * 0.45;
+        background-color: currentColor;
+    }
+}
+
+// 喇叭
+.#{$prefix}-#{$player-prefix}-volume,
+.#{$prefix}-#{$player-prefix}-volumeLow,
+.#{$prefix}-#{$player-prefix}-volumeMedium,
+.#{$prefix}-#{$player-prefix}-volumeHigh,
+.#{$prefix}-#{$player-prefix}-volumeDecrease,
+.#{$prefix}-#{$player-prefix}-volumeIncrease,
+.#{$prefix}-#{$player-prefix}-volumeMute {
+    width: 0;
+    height: 0;
+    border: 0.35em solid;
+    border-left: none;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    padding: 0.3em 0.2em;
+    -webkit-box-shadow: inset 0.2em 0;
+    box-shadow: inset 0.2em 0;
+    margin: 0.1em 0.375em;
+    position: relative;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeLow:before,
+.#{$prefix}-#{$player-prefix}-volumeMedium:before,
+.#{$prefix}-#{$player-prefix}-volumeHigh:before,
+.#{$prefix}-#{$player-prefix}-volumeHigh:after,
+.#{$prefix}-#{$player-prefix}-volumeDecrease:before,
+.#{$prefix}-#{$player-prefix}-volumeIncrease:before,
+.#{$prefix}-#{$player-prefix}-volumeMute:before,
+.#{$prefix}-#{$player-prefix}-volumeDecrease:after,
+.#{$prefix}-#{$player-prefix}-volumeIncrease:after,
+.#{$prefix}-#{$player-prefix}-volumeMute:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.#{$prefix}-#{$player-prefix}-volumeLow,
+.#{$prefix}-#{$player-prefix}-volumeMedium,
+.#{$prefix}-#{$player-prefix}-volumeHigh {
+    margin: 0.1em 0.5em 0.1em 0.25em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeLow::before,
+.#{$prefix}-#{$player-prefix}-volumeMedium::before,
+.#{$prefix}-#{$player-prefix}-volumeHigh::before,
+.#{$prefix}-#{$player-prefix}-volumeHigh::after {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    position: absolute;
+    border: 0.1em solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    left: 0.1em;
+    top: 50%;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeMedium,
+.#{$prefix}-#{$player-prefix}-volumeHigh {
+    margin: 0.1em 0.6em 0.1em 0.15em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeMedium::before,
+.#{$prefix}-#{$player-prefix}-volumeHigh::before {
+    content: "";
+    border-style: double;
+    border-width: 0.3em;
+    left: -0.1em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeHigh {
+    margin: 0.1em 0.7em 0.1em 0.05em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeHigh::after {
+    content: "";
+    width: 1.6em;
+    height: 1.6em;
+    left: -0.35em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeDecrease,
+.#{$prefix}-#{$player-prefix}-volumeIncrease,
+.#{$prefix}-#{$player-prefix}-volumeMute {
+    margin: 0.1em 0.7em 0.1em 0.05em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeDecrease::before,
+.#{$prefix}-#{$player-prefix}-volumeIncrease::before,
+.#{$prefix}-#{$player-prefix}-volumeMute::before,
+.#{$prefix}-#{$player-prefix}-volumeDecrease::after,
+.#{$prefix}-#{$player-prefix}-volumeIncrease::after,
+.#{$prefix}-#{$player-prefix}-volumeMute::after {
+    -webkit-box-shadow: inset 0 0 0 1em;
+    box-shadow: inset 0 0 0 1em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeDecrease::before,
+.#{$prefix}-#{$player-prefix}-volumeIncrease::before,
+.#{$prefix}-#{$player-prefix}-volumeMute::before {
+    width: 0.5em;
+    height: 0.1em;
+    left: 0.85em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeIncrease::after,
+.#{$prefix}-#{$player-prefix}-volumeMute::after {
+    height: 0.5em;
+    width: 0.1em;
+    left: 1.05em;
+}
+
+.#{$prefix}-#{$player-prefix}-volumeMute::after,
+.#{$prefix}-#{$player-prefix}-volumeMute::before {
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
