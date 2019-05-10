@@ -16,29 +16,25 @@
 </head>
 <body>
   <div class="main">
-    <h1 class="logo"><a href="https://babyisun.github.io/css-palace" title="CSS Palace 首页" target="_blank">CSS Palace</a></h1>
+    <h1 class="logo"><div class="logo-dark"></div>  <a href="https://babyisun.github.io/css-palace" title="CSS Palace 首页" target="_blank">CSS Palace</a></h1>
     <p>这是一个用纯CSS写的图标库，没有一丝多余代码，简洁而明快。</p>
     <div class="article markdown">
-      <h2 id="font-class-">引用方式</h2>
+      <h2 id="font-class-">说明</h2>
       <hr>
-      <p>font-class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书写不直观，语意不明确的问题。</p>
-      <p>与 Unicode 使用方式相比，具有如下特点：</p>
       <ul>
-        <li>兼容性良好，支持 IE8+，及所有现代浏览器。</li>
-        <li>相比于 Unicode 语意明确，书写更直观。可以很容易分辨这个 icon 是什么。</li>
-        <li>因为使用 class 来定义图标，所以当要替换图标时，只需要修改 class 里面的 Unicode 引用。</li>
-        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        <li>支持 IE9+，及所有现代浏览器</li>
+        <li>通过font-size控制图标大小，通过color控制颜色</li>
+        <li>通过重写样式，可以支持多色图标，并配合css动画使用</li>
       </ul>
-      <p>使用步骤如下：</p>
+      <h2>使用步骤：</h2>
       <h3 id="-fontclass-">第一步：引入项目下面生成的 fontclass 代码：</h3>
-<pre><code class="language-html">&lt;link rel="stylesheet" href="./iconfont.css"&gt;
+<pre><code class="language-html">&lt;link rel="stylesheet" href="./css-palace.css"&gt;
 </code></pre>
       <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
-<pre><code class="language-html">&lt;span class="iconfont icon-xxx"&gt;&lt;/span&gt;
+<pre><code class="language-html">&lt;span class="css-palace cp-xxx"&gt;&lt;/span&gt;
 </code></pre>
       <blockquote>
-        <p>"
-          iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
+        <p>可以通过重写 "css-palace" 来改变图标全局样式，如大小、颜色。</p>
       </blockquote>
     </div>
     <div class="nav-tabs">
@@ -90,22 +86,13 @@
             <div class="code-name">.cp-arrow-x-right</div>
           </li>
           
-          <li class="dib">
-            <span class="icon iconfont icon-down-circle"></span>
-            <div class="name">
-              down-circle
-            </div>
-            <div class="code-name">.icon-down-circle
-            </div>
-          </li>
-          
         </ul>
       </div>
     </div>
 
     <div class="nav-tabs">
       <ul id="tabs" class="dib-box">
-        <li class="dib active"><span>Font class</span></li>
+        <li class="dib active"><span>Loading</span></li>
       </ul>      
     </div>
     <div class="tab-container">

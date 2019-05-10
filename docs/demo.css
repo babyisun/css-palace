@@ -63,12 +63,21 @@
 }
 
 .main .logo {
+  position: relative;
   color: #333;
   text-align: left;
   line-height: 1;
   height: 50px;
   overflow: hidden;
+  padding: 16px;
   *zoom: 1;
+}
+
+.main .logo .logo-dark {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 40px;
+  top: 10px;
 }
 
 .main .logo a {
@@ -76,8 +85,8 @@
   color: #333;
 }
 
-.main .logo + p {
-  margin-bottom: 30px; 
+.main .logo+p {
+  margin-bottom: 30px;
 }
 
 .helps {
@@ -113,7 +122,8 @@
   line-height: 1.2;
 }
 
-.icon_lists .icon,.icon_lists .css-palace {
+.icon_lists .icon,
+.icon_lists .css-palace {
   display: block;
   /* height: 100px;
   line-height: 100px;
@@ -126,7 +136,8 @@
   transition: all 0.25s linear;
 }
 
-.icon_lists .icon:hover, .icon_lists .css-palace:hover {
+.icon_lists .icon:hover,
+.icon_lists .css-palace:hover {
   /* font-size: 20px; */
   transform: scale(1.3);
 }
@@ -546,7 +557,7 @@ pre[class*="language-"] {
 /* .dib-box {
   display: inline-block;
 } */
-.dib-box .dib{
+.dib-box .dib {
   vertical-align: inherit;
   font-size: 12px;
   letter-spacing: normal;

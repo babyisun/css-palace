@@ -29,7 +29,7 @@
     },
     "scripts": {
         "build": "sass -t compressed src/index.scss dist/css-palace.css",
-        "watch": "sass --watch src/index.scss:dist/css-palace.css",
+        "start": "sass --watch src/index.scss:dist/css-palace.css",
         "stylelint": "npx stylelint 'core/**/*.scss'",
         "test": "bundle exec rake"
     }

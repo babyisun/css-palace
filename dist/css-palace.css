@@ -136,6 +136,40 @@
     border-color: transparent transparent transparent currentColor;
     border-width: 1.8em 0 1.8em 1.8em; }
 
+.logo-dark, .logo-light {
+  border-style: solid;
+  border-color: #000;
+  box-sizing: border-box;
+  width: 1em;
+  height: 1em;
+  border-width: .43em .43em 0 0;
+  transform: rotate(-45deg);
+  position: relative; }
+  .logo-dark::before, .logo-light::before {
+    content: '';
+    position: absolute;
+    left: 1.6em;
+    top: .43em;
+    width: .43em;
+    height: .73em;
+    background-color: #000;
+    transform: rotate(45deg);
+    transform-origin: right top; }
+  .logo-dark::after, .logo-light::after {
+    content: '';
+    position: absolute;
+    left: .93em;
+    top: .79em;
+    width: .43em;
+    height: .43em;
+    border-radius: 50%;
+    background-color: #e9491d; }
+
+.logo-light {
+  border-color: #fff; }
+  .logo-light::before {
+    background-color: #fff; }
+
 .css-palace {
   color: #888;
   font-size: 12px;

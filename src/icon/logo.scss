@@ -1,0 +1,43 @@
+$dark: #000;
+$light: #fff;
+$dot: #e9491d;
+// $size: 3em;
+.logo-dark, .logo-light{
+  border-style: solid;
+  border-color: $dark;
+  box-sizing: border-box;
+  width:1em;
+  height:1em;
+  border-width: .43em .43em 0 0;
+  transform: rotate(-45deg);
+  position: relative; 
+  
+  &::before{
+    content: '';
+    position: absolute;
+    left: 1.6em;
+    top: .43em;
+    width: .43em;
+    height: .73em;
+    background-color: $dark;
+    transform: rotate(45deg);
+    transform-origin: right top;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    left: .93em;
+    top: .79em;
+    width: .43em;
+    height: .43em;
+    border-radius: 50%;
+    background-color: $dot;
+  }
+}
+
+.logo-light{
+  border-color: $light;
+  &::before{
+    background-color: $light;
+  }
+}
