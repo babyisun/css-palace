@@ -1,0 +1,61 @@
+// $prefix: 'load';
+
+$size: 1em;
+$player-prefix: 'player';
+
+@mixin player-ring {
+    box-sizing: border-box;
+    position: relative;
+    width: $size;
+    height: $size;
+    border: $size *0.1 solid currentColor;
+    border-radius: 50%;
+}
+
+@mixin player-base {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.#{$prefix}-#{$player-prefix}-play {
+    @include player-ring;
+
+    &::after {
+        @include player-base;
+        width: 0;
+        height: 0;
+        margin-left: -$size * 0.15;
+        border-top: $size * 0.3 solid transparent;
+        border-bottom: $size * 0.3 solid transparent;
+        border-left: $size *0.45 solid currentColor;
+    }
+}
+
+.#{$prefix}-#{$player-prefix}-pause {
+    @include player-ring;
+
+    &::before {
+        @include player-base;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: -$size * 0.175;
+        width: $size * 0.1;
+        height: $size * 0.45;
+        background-color: currentColor;
+    }
+
+    &::after {
+        @include player-base;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: $size * 0.075;
+        width: $size * 0.1;
+        height: $size * 0.45;
+        background-color: currentColor;
+    }
+}

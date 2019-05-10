@@ -1,0 +1,263 @@
+@charset "UTF-8";
+.logo-dark, .logo-light {
+  border-style: solid;
+  border-color: #000;
+  box-sizing: border-box;
+  width: 1em;
+  height: 1em;
+  border-width: .43em .43em 0 0;
+  transform: rotate(-45deg);
+  position: relative; }
+  .logo-dark::before, .logo-light::before {
+    content: '';
+    position: absolute;
+    left: 1.6em;
+    top: .43em;
+    width: .43em;
+    height: .73em;
+    background-color: #000;
+    transform: rotate(45deg);
+    transform-origin: right top; }
+  .logo-dark::after, .logo-light::after {
+    content: '';
+    position: absolute;
+    left: .93em;
+    top: .79em;
+    width: .43em;
+    height: .43em;
+    border-radius: 50%;
+    background-color: #e9491d; }
+
+.logo-light {
+  border-color: #fff; }
+  .logo-light::before {
+    background-color: #fff; }
+
+/* Checks for a valid CSS color.
+*  颜色合法性检查
+*
+* @argument {string} $color
+*
+* @return {boolean}
+*
+*/
+.cp-arrow-up {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent currentColor;
+  border-width: 0 0.9em 0.9em; }
+
+.cp-arrow-down {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: currentColor transparent transparent;
+  border-width: 0.9em 0.9em 0; }
+
+.cp-arrow-left {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent currentColor transparent transparent;
+  border-width: 0.9em 0.9em 0.9em 0; }
+
+.cp-arrow-right {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent transparent currentColor;
+  border-width: 0.9em 0 0.9em 0.9em; }
+
+.cp-arrow-x-up {
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent transparent currentColor;
+  border-width: 0 0.9em 0.9em;
+  position: relative; }
+  .cp-arrow-x-up::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0.9em;
+    margin-left: -0.45em;
+    width: 0.9em;
+    height: 0.65em;
+    background-color: currentColor; }
+
+.cp-arrow-x-down {
+  position: relative;
+  width: 0.9em;
+  height: 0.65em;
+  background-color: currentColor; }
+  .cp-arrow-x-down::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 0.65em;
+    margin-left: -0.9em;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    border-color: currentColor transparent transparent;
+    border-width: 0.9em 0.9em 0; }
+
+.cp-arrow-x-left {
+  position: relative;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  border-color: transparent currentColor transparent transparent;
+  border-width: 0.9em 0.9em 0.9em 0; }
+  .cp-arrow-x-left::after {
+    position: absolute;
+    content: "";
+    height: 0.9em;
+    width: 0.65em;
+    background-color: currentColor;
+    left: 0.9em;
+    margin-top: -0.45em; }
+
+.cp-arrow-x-right {
+  position: relative;
+  height: 0.9em;
+  width: 0.65em;
+  background-color: currentColor; }
+  .cp-arrow-x-right::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0.65em;
+    margin-top: -0.9em;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent transparent currentColor;
+    border-width: 0.9em 0 0.9em 0.9em; }
+
+.cp-upload {
+  box-sizing: border-box;
+  position: relative;
+  width: 1em;
+  height: 0.4em;
+  border-width: 0.15em;
+  border-style: none solid solid;
+  border-color: currentColor; }
+  .cp-upload::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0.1em;
+    left: 0;
+    margin: auto;
+    width: 0.15em;
+    height: 0.5em;
+    background-color: currentColor; }
+  .cp-upload::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0.55em;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.3em solid currentColor;
+    border-left: 0.3em solid transparent; }
+
+.cp-download {
+  box-sizing: border-box;
+  position: relative;
+  width: 1em;
+  height: 0.4em;
+  border-width: 0.15em;
+  border-style: none solid solid;
+  border-color: currentColor; }
+  .cp-download::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0.35em;
+    left: 0;
+    margin: auto;
+    width: 0.15em;
+    height: 0.5em;
+    background-color: currentColor; }
+  .cp-download::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0.1em;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-right: 0.3em solid transparent;
+    border-top: 0.3em solid currentColor;
+    border-left: 0.3em solid transparent; }
+
+.cp-player-play {
+  box-sizing: border-box;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%; }
+  .cp-player-play::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 0;
+    height: 0;
+    margin-left: -0.15em;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-left: 0.45em solid currentColor; }
+
+.cp-player-pause {
+  box-sizing: border-box;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  border: 0.1em solid currentColor;
+  border-radius: 50%; }
+  .cp-player-pause::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -0.175em;
+    width: 0.1em;
+    height: 0.45em;
+    background-color: currentColor; }
+  .cp-player-pause::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.075em;
+    width: 0.1em;
+    height: 0.45em;
+    background-color: currentColor; }
+
+.css-palace {
+  color: #888;
+  font-size: 24px;
+  font-style: normal;
+  display: block; }

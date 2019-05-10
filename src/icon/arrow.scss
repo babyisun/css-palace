@@ -2,89 +2,90 @@
 
 $arrow-prefix: 'arrow';
 
-$arrow-num: 1.8em;
+$size: .9em;
+$height: .65em;
 
 
 .#{$prefix}-#{$arrow-prefix}-up {
-	@include triangle('up', $arrow-num*2, $arrow-num, currentColor);
+	@include triangle('up', $size*2, $size, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-down {
-	@include triangle('down', $arrow-num*2, $arrow-num, currentColor);
+	@include triangle('down', $size*2, $size, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-left {
-	@include triangle('left', $arrow-num, $arrow-num*2, currentColor);
+	@include triangle('left', $size, $size*2, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-right {
-	@include triangle('right', $arrow-num, $arrow-num*2, currentColor);
+	@include triangle('right', $size, $size*2, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-up {
-	@include triangle('up', $arrow-num*2, $arrow-num, currentColor);
+	@include triangle('up', $size*2, $size, currentColor);
 	position: relative;
 
 	&::after {
 		content: "";
 		position: absolute;
 		left: 50%;
-		top: $arrow-num;
-		margin-left: -$arrow-num / 2;
-		width: $arrow-num;
-		height: 1.3em;
+		top: $size;
+		margin-left: -$size / 2;
+		width: $size;
+		height: $height;
 		background-color: currentColor;
 	}
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-down {
 	position: relative;
-	width: $arrow-num;
-	height: 1.3em;
+	width: $size;
+	height: $height;
 	background-color: currentColor;
 
 	&::after {
 		position: absolute;
 		content: "";
 		left: 50%;
-		top: 1.3em;
-		margin-left: -$arrow-num;
-		@include triangle('down', $arrow-num*2, $arrow-num, currentColor);
+		top: $height;
+		margin-left: -$size;
+		@include triangle('down', $size*2, $size, currentColor);
 	}
 
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-left {
 	position: relative;
-	@include triangle('left', $arrow-num, $arrow-num*2, currentColor);
+	@include triangle('left', $size, $size*2, currentColor);
 
 
 	&::after {
 		position: absolute;
 		content: "";
-		height: $arrow-num;
-		width: 1.3em;
+		height: $size;
+		width: $height;
 		background-color: currentColor;
 		// top: 50%;
-		left: $arrow-num;
-		margin-top: -$arrow-num / 2;
+		left: $size;
+		margin-top: -$size / 2;
 	}
 
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-right {
 	position: relative;
-	height: $arrow-num;
-	width: 1.3em;
+	height: $size;
+	width: $height;
 	background-color: currentColor;
 
 	&::after {
 		position: absolute;
 		content: "";
 		top: 50%;
-		left: 1.3em;
-		margin-top: -$arrow-num;
-		@include triangle('right', $arrow-num, $arrow-num*2, currentColor);
+		left: $height;
+		margin-top: -$size;
+		@include triangle('right', $size, $size*2, currentColor);
 	}
 
 }

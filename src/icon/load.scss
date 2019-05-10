@@ -1,0 +1,75 @@
+// $prefix: 'load';
+
+$size: 1em;
+
+.#{$prefix}-upload {
+    box-sizing: border-box;
+    position: relative;
+    width: $size;
+    height: $size * 0.4;
+    border-width: $size * 0.15;
+    border-style: none solid solid;
+    border-color: currentColor;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: $size * 0.1;
+        left: 0;
+        margin: auto;
+        width: $size * 0.15;
+        height: $size * 0.5;
+        background-color: currentColor;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: $size * 0.55;
+        left: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-right: $size * 0.3 solid transparent;
+        border-bottom: $size * 0.3 solid currentColor;
+        border-left: $size * 0.3 solid transparent;
+    }
+}
+
+.#{$prefix}-download {
+    box-sizing: border-box;
+    position: relative;
+    width: $size;
+    height: $size * 0.4;
+    border-width: $size * 0.15;
+    border-style: none solid solid;
+    border-color: currentColor;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: $size * 0.35;
+        left: 0;
+        margin: auto;
+        width: $size * 0.15;
+        height: $size * 0.5;
+        background-color: currentColor;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: $size * 0.1;
+        left: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-right: $size * 0.3 solid transparent;
+        border-top: $size * 0.3 solid currentColor;
+        border-left: $size * 0.3 solid transparent;
+    }
+}

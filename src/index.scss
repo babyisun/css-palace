@@ -6,13 +6,16 @@ $prefix: 'cp' !default;
 
 @import "library/ellipsis";
 
-@import "icon/arrow";
 @import "icon/logo";
+@import "icon/arrow";
+@import "icon/load";
+@import "icon/player";
+
 
 
 .css-palace{
     color: #888;
-    font-size: 12px;
+    font-size: 24px;
     font-style: normal;
     display: block;
 }
