@@ -89,6 +89,11 @@
   margin-bottom: 30px;
 }
 
+.main .logo .github {
+  float: right;
+  outline: 0;
+}
+
 .helps {
   margin-top: 40px;
 }
