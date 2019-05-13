@@ -1,0 +1,132 @@
+$loading-prefix: 'loading';
+
+$size: 2em;
+$point: 0.2em;
+$size-border: $size + $point;
+$size-half: $size-border / 2;
+$bg: #fff;
+
+
+// Load1 start
+.#{$prefix}-#{$loading-prefix}-ring-ease,
+.#{$prefix}-#{$loading-prefix}-ring-ease:before,
+.#{$prefix}-#{$loading-prefix}-ring-ease:after {
+  border-radius: 50%;
+}
+.#{$prefix}-#{$loading-prefix}-ring-ease:before,
+.#{$prefix}-#{$loading-prefix}-ring-ease:after {
+  position: absolute;
+  content: '';
+}
+.#{$prefix}-#{$loading-prefix}-ring-ease:before {
+  width: $size-half;
+  height: $size-border;
+  background: $bg;;
+  border-radius: $size-border 0 0 $size-border;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: $size-half $size-half;
+  transform-origin: $size-half $size-half;
+  -webkit-animation: ring-ease 2s infinite ease 1.5s;
+  animation: ring-ease 2s infinite ease 1.5s;
+}
+.#{$prefix}-#{$loading-prefix}-ring-ease {
+  color: currentColor;
+  position: relative;
+  width: $size;
+  height: $size;
+  box-shadow: inset 0 0 0 $size/10;
+}
+.#{$prefix}-#{$loading-prefix}-ring-ease:after {
+  width: $size-half;
+  height: $size-border;
+  background: $bg;
+  border-radius: 0 $size-border $size-border 0;
+  top: -0.1em;
+  left: $size-half;
+  -webkit-transform-origin: 0px $size-half;
+  transform-origin: 0px $size-half;
+  -webkit-animation: ring-ease 2s infinite ease;
+  animation: ring-ease 2s infinite ease;
+}
+@-webkit-keyframes ring-ease {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes ring-ease {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+// Load1 end
+
+// Laod2 start
+ .#{$prefix}-#{$loading-prefix}-ring {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background: currentColor;
+    background: -moz-linear-gradient(left, currentColor 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, currentColor 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, currentColor 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, currentColor 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, currentColor 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: ring-linear 1.4s infinite linear;
+    animation: ring-linear 1.4s infinite linear;
+  }
+   .#{$prefix}-#{$loading-prefix}-ring:before {
+    width: 50%;
+    height: 50%;
+    background: currentColor;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+   .#{$prefix}-#{$loading-prefix}-ring:after {
+    background: $bg;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes ring-linear {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes ring-linear {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+// Load2 end
