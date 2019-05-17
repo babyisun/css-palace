@@ -262,27 +262,27 @@ $current: #888;
   100% {
     box-shadow: 0em -1.3em 0em 0em $current,
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.5),
       -0.9em -0.9em 0 0em rgba($current, 0.7);
   }
   12.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.7),
-      0.9em -0.9em 0 0em $current, 1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      0.9em -0.9em 0 0em $current, 1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.5);
   }
   25% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.5),
-      0.9em -0.9em 0 0em rgba($current, 0.7), 1.25em 0em 0 0em $current,
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      0.9em -0.9em 0 0em rgba($current, 0.7), 1.3em 0em 0 0em $current,
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -290,8 +290,8 @@ $current: #888;
   37.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.5),
-      1.25em 0em 0 0em rgba($current, 0.7), 0.875em 0.875em 0 0em $current,
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.7), 0.9em 0.9em 0 0em $current,
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -299,8 +299,8 @@ $current: #888;
   50% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.5),
-      0.875em 0.875em 0 0em rgba($current, 0.7), 0em 1.25em 0 0em $current,
+      1.3em 0em 0 0em rgba($current, 0.5),
+      0.9em 0.9em 0 0em rgba($current, 0.7), 0em 1.3em 0 0em $current,
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -308,27 +308,27 @@ $current: #888;
   62.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.5),
-      0em 1.25em 0 0em rgba($current, 0.7), -0.9em 0.9em 0 0em $current,
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.5),
+      0em 1.3em 0 0em rgba($current, 0.7), -0.9em 0.9em 0 0em $current,
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
   }
   75% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.5),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.5),
       -0.9em 0.9em 0 0em rgba($current, 0.7), -1.3em 0em 0 0em $current,
       -0.9em -0.9em 0 0em rgba($current, 0.2);
   }
   87.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.5),
       -1.3em 0em 0 0em rgba($current, 0.7), -0.9em -0.9em 0 0em $current;
   }
@@ -338,27 +338,27 @@ $current: #888;
   100% {
     box-shadow: 0em -1.3em 0em 0em $current,
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.5),
       -0.9em -0.9em 0 0em rgba($current, 0.7);
   }
   12.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.7),
-      0.9em -0.9em 0 0em $current, 1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      0.9em -0.9em 0 0em $current, 1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.5);
   }
   25% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.5),
-      0.9em -0.9em 0 0em rgba($current, 0.7), 1.25em 0em 0 0em $current,
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      0.9em -0.9em 0 0em rgba($current, 0.7), 1.3em 0em 0 0em $current,
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -366,8 +366,8 @@ $current: #888;
   37.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.5),
-      1.25em 0em 0 0em rgba($current, 0.7), 0.875em 0.875em 0 0em $current,
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.7), 0.9em 0.9em 0 0em $current,
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -375,8 +375,8 @@ $current: #888;
   50% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.5),
-      0.875em 0.875em 0 0em rgba($current, 0.7), 0em 1.25em 0 0em $current,
+      1.3em 0em 0 0em rgba($current, 0.5),
+      0.9em 0.9em 0 0em rgba($current, 0.7), 0em 1.3em 0 0em $current,
       -0.9em 0.9em 0 0em rgba($current, 0.2),
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
@@ -384,27 +384,27 @@ $current: #888;
   62.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.5),
-      0em 1.25em 0 0em rgba($current, 0.7), -0.9em 0.9em 0 0em $current,
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.5),
+      0em 1.3em 0 0em rgba($current, 0.7), -0.9em 0.9em 0 0em $current,
       -1.3em 0em 0 0em rgba($current, 0.2),
       -0.9em -0.9em 0 0em rgba($current, 0.2);
   }
   75% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.5),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.5),
       -0.9em 0.9em 0 0em rgba($current, 0.7), -1.3em 0em 0 0em $current,
       -0.9em -0.9em 0 0em rgba($current, 0.2);
   }
   87.5% {
     box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
       0.9em -0.9em 0 0em rgba($current, 0.2),
-      1.25em 0em 0 0em rgba($current, 0.2),
-      0.875em 0.875em 0 0em rgba($current, 0.2),
-      0em 1.25em 0 0em rgba($current, 0.2),
+      1.3em 0em 0 0em rgba($current, 0.2),
+      0.9em 0.9em 0 0em rgba($current, 0.2),
+      0em 1.3em 0 0em rgba($current, 0.2),
       -0.9em 0.9em 0 0em rgba($current, 0.5),
       -1.3em 0em 0 0em rgba($current, 0.7), -0.9em -0.9em 0 0em $current;
   }

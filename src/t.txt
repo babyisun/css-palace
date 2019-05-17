@@ -1,0 +1,67 @@
+.frame1 {
+  box-shadow: 0em -1.3em 0em 0em $current,
+    0.9em -0.9em 0 0em rgba($current, 0.2),
+    1.3em 0em 0 0em rgba($current, 0.2),
+    0.9em 0.9em 0 0em rgba($current, 0.2),
+    0em 1.3em 0 0em rgba($current, 0.2),
+    -0.9em 0.9em 0 0em rgba($current, 0.2),
+    -1.3em 0em 0 0em rgba($current, 0.5),
+    -0.9em -0.9em 0 0em rgba($current, 0.7);
+}
+
+.frame2 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.7),
+    0.9em -0.9em 0 0em $current, 1.3em 0em 0 0em rgba($current, 0.2),
+    0.9em 0.9em 0 0em rgba($current, 0.2),
+    0em 1.3em 0 0em rgba($current, 0.2), -0.9em 0.9em 0 0em rgba($current, 0.2),
+    -1.3em 0em 0 0em rgba($current, 0.2),
+    -0.9em -0.9em 0 0em rgba($current, 0.5);
+}
+.frame3 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.5),
+    0.9em -0.9em 0 0em rgba($current, 0.7), 1.3em 0em 0 0em $current,
+    0.9em 0.9em 0 0em rgba($current, 0.2),
+    0em 1.3em 0 0em rgba($current, 0.2), -0.9em 0.9em 0 0em rgba($current, 0.2),
+    -1.3em 0em 0 0em rgba($current, 0.2),
+    -0.9em -0.9em 0 0em rgba($current, 0.2);
+}
+
+.frame4 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
+    0.9em -0.9em 0 0em rgba($current, 0.5), 1.3em 0em 0 0em rgba($current, 0.7),
+    0.9em 0.9em 0 0em $current, 0em 1.3em 0 0em rgba($current, 0.2),
+    -0.9em 0.9em 0 0em rgba($current, 0.2), -1.3em 0em 0 0em rgba($current, 0.2),
+    -0.9em -0.9em 0 0em rgba($current, 0.2);
+}
+
+.frame5 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
+    0.9em -0.9em 0 0em rgba($current, 0.2), 1.3em 0em 0 0em rgba($current, 0.5),
+    0.9em 0.9em 0 0em rgba($current, 0.7), 0em 1.3em 0 0em $current,
+    -0.9em 0.9em 0 0em rgba($current, 0.2), -1.3em 0em 0 0em rgba($current, 0.2),
+    -0.9em -0.9em 0 0em rgba($current, 0.2);
+}
+
+.frame6 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
+    0.9em -0.9em 0 0em rgba($current, 0.2), 1.3em 0em 0 0em rgba($current, 0.2),
+    0.9em 0.9em 0 0em rgba($current, 0.5),
+    0em 1.3em 0 0em rgba($current, 0.7), -0.9em 0.9em 0 0em $current,
+    -1.3em 0em 0 0em rgba($current, 0.2),
+    -0.9em -0.9em 0 0em rgba($current, 0.2);
+}
+
+.frame7 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
+    0.9em -0.9em 0 0em rgba($current, 0.2), 1.3em 0em 0 0em rgba($current, 0.2),
+    0.9em 0.9em 0 0em rgba($current, 0.2),
+    0em 1.3em 0 0em rgba($current, 0.5), -0.9em 0.9em 0 0em rgba($current, 0.7),
+    -1.3em 0em 0 0em $current, -0.9em -0.9em 0 0em rgba($current, 0.2);
+}
+.frame8 {
+  box-shadow: 0em -1.3em 0em 0em rgba($current, 0.2),
+    0.9em -0.9em 0 0em rgba($current, 0.2), 1.3em 0em 0 0em rgba($current, 0.2),
+    0.9em 0.9em 0 0em rgba($current, 0.2),
+    0em 1.3em 0 0em rgba($current, 0.2), -0.9em 0.9em 0 0em rgba($current, 0.5),
+    -1.3em 0em 0 0em rgba($current, 0.7), -0.9em -0.9em 0 0em $current;
+}
