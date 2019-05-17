@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.cp-rotate {
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite; }
+
 .logo-dark, .logo-light {
   border-style: solid;
   border-color: #000;
@@ -158,25 +169,25 @@
   position: relative;
   width: 0;
   height: 0;
-  border-width: 0.35em .5em;
+  border-width: 0.35em 0.5em;
   border-style: solid;
   border-color: transparent transparent currentColor currentColor; }
   .cp-email::before {
     content: "";
     position: absolute;
     top: -0.35em;
-    left: .5em;
+    left: 0.5em;
     transform: rotateY(180deg);
     transform-origin: left center;
     width: 0;
     height: 0;
-    border-width: 0.35em .5em;
+    border-width: 0.35em 0.5em;
     border-style: solid;
     border-color: transparent transparent currentColor currentColor; }
   .cp-email::after {
     content: "";
     position: absolute;
-    top: -.38em;
+    top: -0.38em;
     left: 50%;
     margin-left: -0.45em;
     width: 0;
@@ -184,6 +195,36 @@
     border-top: 0.3em solid currentColor;
     border-right: 0.45em solid transparent;
     border-left: 0.45em solid transparent; }
+
+.cp-sync {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: relative; }
+  .cp-sync::before, .cp-sync::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 0.2em;
+    border-style: solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent; }
+  .cp-sync::before {
+    -webkit-transform: translateX(50%) rotate(-45deg);
+    -ms-transform: translateX(50%) rotate(-45deg);
+    transform: translateX(50%) rotate(-45deg);
+    left: 50%;
+    top: 0; }
+  .cp-sync::after {
+    -ms-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+    right: 50%;
+    bottom: 0; }
 
 /* Checks for a valid CSS color.
 *  颜色合法性检查

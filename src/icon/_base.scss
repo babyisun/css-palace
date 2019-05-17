@@ -140,7 +140,7 @@
   position: relative;
   width: 0;
   height: 0;
-  border-width: 0.35em .5em;
+  border-width: 0.35em 0.5em;
   border-style: solid;
   border-color: transparent transparent currentColor currentColor;
 
@@ -148,19 +148,19 @@
     content: "";
     position: absolute;
     top: -0.35em;
-    left: .5em;
+    left: 0.5em;
     transform: rotateY(180deg);
     transform-origin: left center;
     width: 0;
     height: 0;
-    border-width: 0.35em .5em;
+    border-width: 0.35em 0.5em;
     border-style: solid;
     border-color: transparent transparent currentColor currentColor;
   }
   &::after {
     content: "";
     position: absolute;
-    top: -.38em;
+    top: -0.38em;
     left: 50%;
     margin-left: -0.45em;
     width: 0;
@@ -168,5 +168,40 @@
     border-top: 0.3em solid currentColor;
     border-right: 0.45em solid transparent;
     border-left: 0.45em solid transparent;
+  }
+}
+
+.#{$prefix}-sync {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 0.2em;
+    border-style: solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  &::before {
+    -webkit-transform: translateX(50%) rotate(-45deg);
+    -ms-transform: translateX(50%) rotate(-45deg);
+    transform: translateX(50%) rotate(-45deg);
+    left: 50%;
+    top: 0;
+  }
+  &::after {
+    -ms-transform: translateX(-50%) rotate(135deg);
+    transform: translateX(-50%) rotate(135deg);
+    right: 50%;
+    bottom: 0;
   }
 }

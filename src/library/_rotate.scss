@@ -1,0 +1,19 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin rotate($duration: 1) {
+  -webkit-animation: rotate #{$duration}s linear infinite;
+  -moz-animation: rotate #{$duration}s linear infinite;
+  -o-animation: rotate #{$duration}s linear infinite;
+  animation: rotate #{$duration}s linear infinite;
+}
+
+.cp-rotate {
+  @include rotate;
+}
