@@ -129,6 +129,9 @@
       color: #999;
       width: 120px;
       font-size: 12px;
+      &:hover{
+        color: #666;
+      }
       &::after{
         content: "\25B6 \FE0E";
       }

@@ -112,6 +112,8 @@
       color: #999;
       width: 120px;
       font-size: 12px; }
+      .icon_lists li .name:hover {
+        color: #666; }
       .icon_lists li .name::after {
         content: "\25B6 \FE0E"; }
   .icon_lists .svg-icon {
