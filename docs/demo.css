@@ -102,7 +102,7 @@
       transition: all 0.25s linear; }
       .icon_lists li .icon:hover,
       .icon_lists li .css-palace:hover {
-        transform: scale(1.3); }
+        color: #000; }
     .icon_lists li .code-name {
       color: #666;
       width: 120px;

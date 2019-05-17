@@ -1,91 +1,121 @@
-@import '../library/triangle';
+@import "../library/triangle";
 
-$arrow-prefix: 'arrow';
+$arrow-prefix: "arrow";
 
-$size: .9em;
-$height: .65em;
-
+$size: 0.9em;
+$height: 0.65em;
 
 .#{$prefix}-#{$arrow-prefix}-up {
-	@include triangle('up', $size*2, $size, currentColor);
+  @include triangle("up", $size * 2, $size, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-down {
-	@include triangle('down', $size*2, $size, currentColor);
+  @include triangle("down", $size * 2, $size, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-left {
-	@include triangle('left', $size, $size*2, currentColor);
+  @include triangle("left", $size, $size * 2, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-right {
-	@include triangle('right', $size, $size*2, currentColor);
+  @include triangle("right", $size, $size * 2, currentColor);
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-up {
-	@include triangle('up', $size*2, $size, currentColor);
-	position: relative;
+  @include triangle("up", $size * 2, $size, currentColor);
+  position: relative;
 
-	&::after {
-		content: "";
-		position: absolute;
-		left: 50%;
-		top: $size;
-		margin-left: -$size / 2;
-		width: $size;
-		height: $height;
-		background-color: currentColor;
-	}
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: $size;
+    margin-left: -$size / 2;
+    width: $size;
+    height: $height;
+    background-color: currentColor;
+  }
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-down {
-	position: relative;
-	width: $size;
-	height: $height;
-	background-color: currentColor;
+  position: relative;
+  width: $size;
+  height: $height;
+  background-color: currentColor;
 
-	&::after {
-		position: absolute;
-		content: "";
-		left: 50%;
-		top: $height;
-		margin-left: -$size;
-		@include triangle('down', $size*2, $size, currentColor);
-	}
-
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: $height;
+    margin-left: -$size;
+    @include triangle("down", $size * 2, $size, currentColor);
+  }
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-left {
-	position: relative;
-	@include triangle('left', $size, $size*2, currentColor);
+  position: relative;
+  @include triangle("left", $size, $size * 2, currentColor);
 
-
-	&::after {
-		position: absolute;
-		content: "";
-		height: $size;
-		width: $height;
-		background-color: currentColor;
-		// top: 50%;
-		left: $size;
-		margin-top: -$size / 2;
-	}
-
+  &::after {
+    position: absolute;
+    content: "";
+    height: $size;
+    width: $height;
+    background-color: currentColor;
+    // top: 50%;
+    left: $size;
+    margin-top: -$size / 2;
+  }
 }
 
 .#{$prefix}-#{$arrow-prefix}-x-right {
-	position: relative;
-	height: $size;
-	width: $height;
-	background-color: currentColor;
+  position: relative;
+  height: $size;
+  width: $height;
+  background-color: currentColor;
 
-	&::after {
-		position: absolute;
-		content: "";
-		top: 50%;
-		left: $height;
-		margin-top: -$size;
-		@include triangle('right', $size, $size*2, currentColor);
-	}
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: $height;
+    margin-top: -$size;
+    @include triangle("right", $size, $size * 2, currentColor);
+  }
+}
 
+.#{$prefix}-#{$arrow-prefix}-s-up {
+  position: relative;
+  width: 1em;
+  height: 0.2em;
+  background: currentColor;
+  border-radius: 5px;
+//   transform-origin: left top;
+  transform: rotate(45deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: currentColor;
+    width: 0.2em;
+    height: 1em;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+  }
+}
+.#{$prefix}-#{$arrow-prefix}-s-down {
+  @extend .#{$prefix}-#{$arrow-prefix}-s-up;
+  transform: rotate(-135deg);
+}
+.#{$prefix}-#{$arrow-prefix}-s-left {
+  @extend .#{$prefix}-#{$arrow-prefix}-s-up;
+  transform: rotate(-45deg);
+  transform-origin: top left; 
+}
+
+.#{$prefix}-#{$arrow-prefix}-s-right {
+  @extend .#{$prefix}-#{$arrow-prefix}-s-up;
+  transform: rotate(135deg);
 }

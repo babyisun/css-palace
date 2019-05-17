@@ -329,6 +329,33 @@
     border-color: transparent transparent transparent currentColor;
     border-width: 0.9em 0 0.9em 0.9em; }
 
+.cp-arrow-s-up, .cp-arrow-s-down, .cp-arrow-s-left, .cp-arrow-s-right {
+  position: relative;
+  width: 1em;
+  height: 0.2em;
+  background: currentColor;
+  border-radius: 5px;
+  transform: rotate(45deg); }
+  .cp-arrow-s-up::after, .cp-arrow-s-down::after, .cp-arrow-s-left::after, .cp-arrow-s-right::after {
+    position: absolute;
+    content: "";
+    background: currentColor;
+    width: 0.2em;
+    height: 1em;
+    border-radius: 5px;
+    top: 0;
+    left: 0; }
+
+.cp-arrow-s-down {
+  transform: rotate(-135deg); }
+
+.cp-arrow-s-left {
+  transform: rotate(-45deg);
+  transform-origin: top left; }
+
+.cp-arrow-s-right {
+  transform: rotate(135deg); }
+
 .cp-upload {
   box-sizing: border-box;
   position: relative;
