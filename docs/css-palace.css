@@ -226,6 +226,52 @@
     right: 50%;
     bottom: 0; }
 
+.cp-camera {
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.65em 0.9em;
+  border-radius: 0.1em;
+  border-color: currentColor;
+  position: relative; }
+  .cp-camera::before {
+    position: absolute;
+    content: "";
+    top: -0.3em;
+    left: -0.3em;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    border: 0.1em solid #fff;
+    box-shadow: 0 0 0 0.08em, 0 0 0 0.16em #fff; }
+  .cp-camera::after {
+    position: absolute;
+    content: "";
+    top: -0.5em;
+    left: 0.5em;
+    width: 0.2em;
+    border-top: 0.125em solid #fff; }
+
+.cp-heart {
+  display: inline-block;
+  position: relative; }
+  .cp-heart::before, .cp-heart::after {
+    position: absolute;
+    width: 0.76em;
+    height: 1.2em;
+    background: currentColor;
+    border-radius: 50% 50% 0 0;
+    content: "";
+    bottom: 0; }
+  .cp-heart::before {
+    transform: rotate(48deg);
+    transform-origin: 100% 100%;
+    right: 0;
+    background: currentColor; }
+  .cp-heart::after {
+    transform: rotate(-48deg);
+    transform-origin: 0 100%;
+    left: 0; }
+
 /* Checks for a valid CSS color.
 *  颜色合法性检查
 *

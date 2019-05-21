@@ -205,3 +205,57 @@
     bottom: 0;
   }
 }
+
+.#{$prefix}-camera {
+  display: inline-block;
+  border-style: solid;
+  border-width: 0.65em 0.9em;
+  border-radius: 0.1em;
+  border-color: currentColor;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: -0.3em;
+    left: -0.3em;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    border: 0.1em solid $bg;
+    box-shadow: 0 0 0 0.08em, 0 0 0 0.16em $bg;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: -0.5em;
+    left: 0.5em;
+    width: 0.2em;
+    border-top: 0.125em solid $bg;
+  }
+}
+
+.#{$prefix}-heart {
+  display: inline-block;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    width: 0.76em;
+    height: 1.2em;
+    background: currentColor;
+    border-radius: 50% 50% 0 0;
+    content: "";
+    bottom: 0;
+  }
+  &::before {
+    transform: rotate(48deg);
+    transform-origin: 100% 100%;
+    right: 0;
+    background: currentColor;
+  }
+  &::after {
+    transform: rotate(-48deg);
+    transform-origin: 0 100%;
+    left: 0;
+  }
+}
