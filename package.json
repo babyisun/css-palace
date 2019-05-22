@@ -30,7 +30,6 @@
     "scripts": {
         "build": "sass -t compressed src/index.scss dist/css-palace.css",
         "start": "sass --watch --sourcemap=none src/index.scss:docs/css-palace.css",
-        "web": "sass --watch --sourcemap=none docs/demo.scss:docs/demo.css",
-        "stylelint": "npx stylelint 'src/**/*.scss'"
+        "web": "sass --watch --sourcemap=none docs/demo.scss:docs/demo.css"
     }
 }
